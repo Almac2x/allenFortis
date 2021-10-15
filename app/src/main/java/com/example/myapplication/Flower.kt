@@ -10,7 +10,7 @@ package com.example.myapplication
 data class Flower(
     val image: String?,
     val title: String,
-    val root: String,
+    val root: String = "ugat",
     val desc: String,
     val petals: String = "Rose"
 )
