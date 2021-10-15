@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragment_sample">
+    app:startDestination="@id/Fragment_third">
 
     <fragment
         android:id="@+id/fragment_sample"
@@ -19,7 +19,7 @@
         android:id="@+id/fragment_second"
         android:name="com.example.myapplication.fragments.SecondFragment"
         android:label="Fragment Second"
-        tools:layout="@layout/fragment_second" >
+        tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_fragment_second_to_Fragment_third"
             app:destination="@id/Fragment_third" />
@@ -28,5 +28,6 @@
     <fragment
         android:id="@+id/Fragment_third"
         android:name="com.example.myapplication.fragments.ThirdFragment"
-        android:label="Fragment Third"/>
+        android:label="Fragment Third"
+        tools:layout="@layout/fragment_third" />
 </navigation>
