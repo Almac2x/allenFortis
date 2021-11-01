@@ -19,6 +19,8 @@ class SecondActivity : AppCompatActivity() {
         val string = intent.getBundleExtra("sample")?.getString("string")
         val int = intent.getBundleExtra("sample")?.getInt("Int")
         val txt = findViewById<TextView>(R.id.txt1)
+
+
         txt.text = "$string and $int"
     }
 }
